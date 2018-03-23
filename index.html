@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
-    
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -25,6 +25,10 @@
         crossorigin="anonymous"></script>
 
     <style>
+        body {
+            background-image: url(assets/imgs/dust_scratches.png)
+        }
+
         #primary-nav {
             background-color: #FFFFFF;
             border-bottom: solid 2px #cccccc;
@@ -46,26 +50,25 @@
             padding: 0;
         }
 
-      
+
 
         #section-wrapper {
             margin-top: 80px;
-            
+            padding-top: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
 
         #about-img {
-            padding:0px 10px 5px 0px;
-            margin-left:0px;
+            padding: 0px 10px 5px 0px;
+            margin-left: 0px;
             max-width: 250px;
         }
 
         #footer-container {
             position: fixed;
             bottom: 0;
-            background-color:black;
-        }
-
-        header {
+            background-color: black;
         }
     </style>
 
@@ -76,58 +79,71 @@
     <header>
         <div class="fixed-top" id="primary-nav">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand fill" id="header-name" href="#">Zac Keilholz</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand fill" id="header-name" href="#">Zac Keilholz</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
 
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
 
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <span class="glyphicon glyphicon-envelope"></span>About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fa fa-user-plus"></i> Contact</a>
-                            </li>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="glyphicon glyphicon-envelope"></span>About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <i class="fa fa-user-plus"></i> Contact</a>
+                                    </li>
 
-                        </ul>
+                                </ul>
+                            </div>
+                        </nav>
                     </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-        <div class="container" id="section-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3>About Me:</h3>
-                    <img src="assets/imgs/zacprofilepicture.jpg" alt="Photo of Zac" class="img-fluid float-left float-lg-left" id="about-img">
-
-                    <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione error doloribus laboriosam perspiciatis
-                        amet vitae possimus iste ducimus? Sapiente eligendi saepe ducimus ut fuga vitae fugit earum, tenetur
-                        dolor laborum.</P>
-                    <P>Deserunt consequuntur est eveniet quis cumque quo, ut perferendis possimus provident sequi quibusdam
-                        velit ratione quia odio nobis quisquam nihil iusto voluptate obcaecati, explicabo sint. Ratione quidem
-                        maiores in nobis.</P>
-                    <P>Voluptatum fuga non iusto quis facere magnam aspernatur provident eligendi repellendus inventore atque
-                        incidunt, ipsum dolores obcaecati possimus, explicabo asperiores. Repellendus dignissimos ipsum excepturi
-                        minima, itaque aliquam hic aperiam alias.</P>
-                    <P>Exercitationem architecto tenetur repudiandae consequuntur fugiat eaque quo optio adipisci, non magni
-                        excepturi reiciendis at temporibus. Laboriosam, tempore recusandae iusto aut harum optio perferendis
-                        deserunt omnis incidunt porro corporis consectetur!</P>
                 </div>
             </div>
         </div>
-    
-    
+
+    </header>
+    <div class="container border bg-white" id="section-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>About Me:</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <img src="assets/imgs/zacprofilepicture.jpg" alt="Photo of Zac" class="img-fluid float-sm-left" id="about-img">
+                            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione error doloribus laboriosam
+                                perspiciatis amet vitae possimus iste ducimus? Sapiente eligendi saepe ducimus ut fuga vitae
+                                fugit earum, tenetur dolor laborum.</P>
+                            <P>Deserunt consequuntur est eveniet quis cumque quo, ut perferendis possimus provident sequi quibusdam
+                                velit ratione quia odio nobis quisquam nihil iusto voluptate obcaecati, explicabo sint. Ratione
+                                quidem maiores in nobis.</P>
+                            <P>Voluptatum fuga non iusto quis facere magnam aspernatur provident eligendi repellendus inventore
+                                atque incidunt, ipsum dolores obcaecati possimus, explicabo asperiores. Repellendus dignissimos
+                                ipsum excepturi minima, itaque aliquam hic aperiam alias.</P>
+                            <P>Exercitationem architecto tenetur repudiandae consequuntur fugiat eaque quo optio adipisci, non
+                                magni excepturi reiciendis at temporibus. Laboriosam, tempore recusandae iusto aut harum
+                                optio perferendis deserunt omnis incidunt porro corporis consectetur!</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="container-fluid" id="footer-container">
             <div class="row">
