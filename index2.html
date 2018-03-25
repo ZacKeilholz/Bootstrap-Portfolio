@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
+    <!-- Custom CSS Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -21,86 +23,48 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous">  </script>
 
-    <style>
-        body {
-            background-image: url(assets/imgs/dust_scratches.png)
-        }
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
+        crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        #primary-nav {
-            background-color: #FFFFFF;
-            border-bottom: solid 2px #cccccc;
-        }
-
-        #nav-wrapper {
-            max-width: 960px;
-        }
-
-
-        #header-name {
-            background-color: #4AAAA5;
-            color: white;
-            border: #4AAAA5 solid;
-            border-radius: 2px;
-            padding-left: 10px;
-            padding-right: 10px;
-
-        }
-
-        .navbar {
-            padding: 0;
-        }
-
-        #content-section-wrapper {
-            max-width: 960px;
-            margin-top: 80px;
-            margin-bottom: 80px;
-
-        }
-
-        h3 {
-            font-size: 20px;
-            padding: 10px;
-        }
-
-        #about-img {
-            width: 200px;
-        }
-
-        #footer-container {
-            position: fixed;
-            bottom: 0;
-            background-color: black;
-        }
-    </style>
 
     <title>Welcome!</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+
+    <!--Nav Bar-->
     <header>
         <div class="fixed-top" id="primary-nav">
             <div class="container" id="nav-wrapper">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand fill" id="header-name" href="#">Zac Keilholz</a>
+                    <a class="navbar-brand fill" id="header-name" href="about.html">Zac Keilholz</a>
+
+                    <!--Navbar Collapse Code-->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                         aria-label="Toggle navigation">
 
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
+                    <!--Navbar Right Side-->
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="about.html">
                                     <span class="glyphicon glyphicon-envelope"></span>About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="contact.html">
                                     <i class="fa fa-user-plus"></i> Contact</a>
                             </li>
                         </ul>
@@ -110,22 +74,22 @@
         </div>
     </header>
 
-    <!-- Main Content Area -->
+    <!-- About Me Main Content Area -->
     <div class="container" id="content-section-wrapper">
         <div class="row">
 
             <!-- About me Container-->
-            <div class="col-lg-9">
+            <div class="col-lg-9 mb-3">
                 <div class="container bg-white border" id="about-me-wrapper">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h3>About Me:</h3>
+                            <h3 id="about-me-heading">About Me:</h3>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <img src="assets/imgs/zacprofilepicture.jpg" alt="Photo of Zac" class="float-left" id="about-img">
+                            <img src="assets/imgs/zacprofilepicture.jpg" alt="Photo of Zac" class="float-left mr-1" id="about-img">
                             <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione error doloribus laboriosam
                                 perspiciatis amet vitae possimus iste ducimus? Sapiente eligendi saepe ducimus ut fuga vitae
                                 fugit earum, tenetur dolor laborum.</P>
@@ -140,50 +104,65 @@
                 </div>
             </div>
 
-    <!--Contact-Link Container-->
-    <div class="col-lg-3">
-        <div class="container bg-white border">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h5>Contact-Links</h5>
-                </div>
+            <!--Let's Connect Link Container-->
+            <div class="col-lg-3">
+                <div class="container bg-white border pb-3">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>Contact:</h3>
+                        </div>
+                    </div>
 
+                    <!-- Connect Links via Font Awesome  -->
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 ">
+                            <a href="https://github.com/ZacKeilholz">
+                                <span style="font-size:2em;">
+                                    <p class="text-center">
+                                        <i class="fab fa-github fa-lg "></i>
+                                    </p>
+                                </span>
+                            </a>
+
+                        </div>
+                        <div class="col-xs-4 col-sm-4 ">
+                            <a href="https://stackoverflow.com/users/9388071/zac-keilholz">
+                                <span style="font-size:2em;">
+                                    <p class="text-center">
+                                        <i class="fab fa-stack-overflow fa-lg "></i>
+                                    </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 ">
+                            <a href="https://www.linkedin.com/in/zac-keilholz-20459374/">
+                                <span style="font-size:2em;">
+                                    <p class="text-center">
+                                        <i class="fab fa-linkedin fa-lg text-center"></i>
+                                    </p>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <a href="#">
-                        <i class="fa fa-files-o"></i>
-                    </a>
-
-                </div>
-                <div class="col-lg-4">
-                    <h6>Linked In</h6>
-                </div>
-                <div class="col-lg-4">
-                    <h6>Linked In</h6>
-                </div>
-            </div>
-
         </div>
     </div>
-    </div>
-    </div>
 
-
-
-
+    <!--Sticky Footer -->
     <footer>
         <div class="container-fluid" id="footer-container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="text-center">Blah</p>
+                    <p class="text-center mb-1" id="footer-text">
+                        <small>Copyright &copy2018</small>
+                    </p>
                 </div>
             </div>
         </div>
 
     </footer>
-
-
 </body>
 
 </html>
